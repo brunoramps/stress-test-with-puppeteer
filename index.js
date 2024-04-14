@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 
-let abas = 2;
+let abas = 1;
 let nAba = 1;
 
 const browser = await puppeteer.launch({
@@ -30,7 +30,7 @@ async function testarHome(page,browser, nAba){
     const status = response.status();    
     if(status!=200){
         await page.screenshot({ 
-            path: `./stress-test-home/prints/erro/erro-${status}-${Date.now()}.png`,
+            path: `./prints/status-${status}-${Date.now()}.png`,
             type: 'png',
             fullPage: true,
         });

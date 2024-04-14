@@ -1,0 +1,1 @@
+Nesta pasta são armazenados os prints das páginas que apresentaram status diferente de 200.
